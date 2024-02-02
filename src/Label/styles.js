@@ -9,8 +9,8 @@ export const StyledLabel = styled.label`
   }};
   font-size: ${({ $size, theme }) =>
     $size &&
-    (theme?.typography?.label?.[$size]?.$size ||
-      inube.typography.label[$size].$size)};
+    (theme?.typography?.label?.[$size]?.size ||
+      inube.typography.label[$size].size)};
   font-weight: ${({ $size, theme }) =>
     $size &&
     (theme?.typography?.label?.[$size]?.weight ||
