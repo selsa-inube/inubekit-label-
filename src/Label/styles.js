@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-const StyledLabel = styled.label`
+export const StyledLabel = styled.label`
   font-family: ${({ theme }) => {
     return (
       theme?.typography?.label?.large?.font || inube.typography.label.large.font
     );
   }};
-  font-$size: ${({ $$size, theme }) =>
-    $$size &&
-    (theme?.typography?.label?.[$$size]?.$size ||
-      inube.typography.label[$$size].$size)};
+  font-size: ${({ $size, theme }) =>
+    $size &&
+    (theme?.typography?.label?.[$size]?.$size ||
+      inube.typography.label[$size].$size)};
   font-weight: ${({ $size, theme }) =>
     $size &&
     (theme?.typography?.label?.[$size]?.weight ||
@@ -47,5 +47,3 @@ const StyledLabel = styled.label`
     return theme?.color?.text?.dark?.regular || inube.color.text.dark.regular;
   }};
 `;
-
-export { StyledLabel };
