@@ -1,3 +1,15 @@
+# v1.0.2 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix(Label): correct implementation of htmlFor props (carlos3k11@gmail.com)
+
+#### Authors: 1
+
+- Andres Babativa (carlos3k11@gmail.com)
+
+---
+
 # v1.0.1 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`
