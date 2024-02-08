@@ -28,7 +28,7 @@ const Label = (props: ILabelProps) => {
     <StyledLabel
       $disabled={disabled}
       $focused={focused}
-      for={htmlFor}
+      htmlFor={htmlFor}
       $invalid={invalid}
       $margin={margin}
       $padding={padding}
