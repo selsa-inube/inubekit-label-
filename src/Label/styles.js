@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
+import { typography } from "./ typography";
 
 export const StyledLabel = styled.label`
   font-family: ${({ theme }) => {
@@ -28,22 +29,26 @@ export const StyledLabel = styled.label`
   color: ${({ theme, $disabled, $focused, $invalid }) => {
     if ($disabled) {
       return (
-        theme?.color?.text?.dark?.disabled || inube.color.text.dark.disabled
+        theme?.label?.content?.color?.disabled ||
+        inube.label.content.color.disabled
       );
     }
 
     if ($invalid) {
       return (
-        theme?.color?.text?.error?.regular || inube.color.text.error.regular
+        theme?.label?.content?.color?.regular ||
+        inube.label.content.color.regular
       );
     }
 
     if ($focused) {
       return (
-        theme?.color?.text?.primary?.hover || inube.color.text.primary.hover
+        theme?.label?.content?.color?.focus || inube.label.content.color.focus
       );
     }
 
-    return theme?.color?.text?.dark?.regular || inube.color.text.dark.regular;
+    return (
+      theme?.label?.content?.color?.regular || inube.label.content.color.regular
+    );
   }};
 `;
