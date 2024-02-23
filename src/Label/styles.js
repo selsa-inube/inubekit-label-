@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
-import { typography } from "./ typography.ts";
+import { typography } from "./typography.ts";
 
 export const StyledLabel = styled.label`
   font-family: ${({ theme }) => theme?.font || "Roboto"}, sans-serif;
