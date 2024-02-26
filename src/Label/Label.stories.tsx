@@ -1,6 +1,3 @@
-import { ThemeProvider } from "styled-components";
-
-import { presente } from "@inubekit/foundations";
 import { props, parameters } from "./props";
 import { Label, ILabelProps } from ".";
 
@@ -11,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-const Default = (args: ILabelProps) => {
+export const Default = (args: ILabelProps) => {
   return <Label {...args}>{args.children}</Label>;
 };
 Default.args = {
@@ -25,29 +22,4 @@ Default.args = {
   padding: "0px",
 };
 
-const theme = {
-  ...presente,
-};
-
-const Themed = (args: ILabelProps) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Label {...args}>{args.children}</Label>
-    </ThemeProvider>
-  );
-};
-
-Themed.args = {
-  htmlFor: "id",
-  children: "Label Text",
-  size: "large",
-  disabled: false,
-  focused: false,
-  invalid: false,
-  margin: "0px",
-  padding: "0px",
-};
-
 export default story;
-
-export { Default, Themed };
