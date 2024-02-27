@@ -1,3 +1,23 @@
+# v1.1.0 (Tue Feb 27 2024)
+
+#### 🚀 Enhancement
+
+- Component refactoring to use the new token structure [#4](https://github.com/selsa-inube/inubekit-label/pull/4) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### 🐛 Bug Fix
+
+- Adjust package.json for release script [#5](https://github.com/selsa-inube/inubekit-label/pull/5) ([@cmarin001](https://github.com/cmarin001))
+- correct implementation of label with input [#3](https://github.com/selsa-inube/inubekit-label/pull/3) ([@Andresbl123](https://github.com/Andresbl123))
+- Correct implementation of `<Label />` with input [#2](https://github.com/selsa-inube/inubekit-label/pull/2) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v1.0.2 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`
