@@ -1,13 +1,22 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
-import { typography } from "./typography";
 
 export const StyledLabel = styled.label`
-  font-family: ${({ theme }) => theme?.font || "Roboto"}, sans-serif;
-  font-size: ${({ $size }) => typography.label[$size].size};
-  font-weight: ${({ $size }) => typography.label[$size].weight};
-  letter-spacing: ${({ $size }) => typography.label[$size].tracking};
-  line-height: ${({ $size }) => typography.label[$size].lineHeight};
+  font-family: ${({ theme }) =>
+      theme?.typography?.label?.[$size]?.font || "Roboto"},
+    sans-serif;
+  font-size: ${({ theme, $size }) =>
+    theme?.typography?.label?.[$size]?.size ||
+    inube.typography.label[$size].size};
+  font-weight: ${({ theme, $size }) =>
+    theme?.typography?.label?.[$size]?.weight ||
+    inube.typography.label[$size].weight};
+  letter-spacing: ${({ theme, $size }) =>
+    theme?.typography?.label?.[$size]?.tracking ||
+    inube.typography.label[$size].tracking};
+  line-height: ${({ theme, $size }) =>
+    theme?.typography?.label?.[$size]?.lineHeight ||
+    inube.typography.label[$size].lineHeight};
   margin: ${({ $margin }) => $margin};
   padding: ${({ $padding }) => $padding};
   color: ${({ theme, $disabled, $focused, $invalid }) => {
