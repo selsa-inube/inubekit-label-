@@ -1,3 +1,19 @@
+# v1.2.0 (Fri Mar 01 2024)
+
+#### 🚀 Enhancement
+
+- Install new foundations version and use typography tokens [#7](https://github.com/selsa-inube/inubekit-label/pull/7) ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Publish new version 1.1.0 [#6](https://github.com/selsa-inube/inubekit-label/pull/6) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v1.1.0 (Tue Feb 27 2024)
 
 #### 🚀 Enhancement
