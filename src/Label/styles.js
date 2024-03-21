@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-export const StyledLabel = styled.label`
+const StyledLabel = styled.label`
   font-family: ${({ theme }) =>
       theme?.typography?.label?.[$size]?.font || "Roboto"},
     sans-serif;
@@ -37,3 +37,5 @@ export const StyledLabel = styled.label`
     );
   }};
 `;
+
+export { StyledLabel };
