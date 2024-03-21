@@ -1,5 +1,5 @@
 import { props, parameters } from "./props";
-import { Label, ILabelProps } from ".";
+import { Label, ILabel } from ".";
 
 const story = {
   title: "inputs/Label",
@@ -8,7 +8,7 @@ const story = {
   argTypes: props,
 };
 
-export const Default = (args: ILabelProps) => {
+const Default = (args: ILabel) => {
   return <Label {...args}>{args.children}</Label>;
 };
 Default.args = {
@@ -22,4 +22,5 @@ Default.args = {
   padding: "0px",
 };
 
+export { Default };
 export default story;
