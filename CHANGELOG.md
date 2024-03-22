@@ -1,3 +1,23 @@
+# v2.2.0 (Fri Mar 22 2024)
+
+#### 🚀 Enhancement
+
+- Adjust and export interfaces [#10](https://github.com/selsa-inube/inubekit-label/pull/10) ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Publish new version 2.1.0 [#8](https://github.com/selsa-inube/inubekit-label/pull/8) ([@cmarin001](https://github.com/cmarin001))
+
+#### 🔩 Dependency Updates
+
+- Update inubekit/label to storybook v8 [#9](https://github.com/selsa-inube/inubekit-label/pull/9) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v1.2.0 (Fri Mar 01 2024)
 
 #### 🚀 Enhancement
