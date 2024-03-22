@@ -1,18 +1,18 @@
-import { Size } from "./props";
+import { ILabelSize } from "./props";
 import { StyledLabel } from "./styles";
 
-export interface ILabelProps {
+interface ILabel {
   disabled?: boolean;
   focused?: boolean;
   htmlFor: string;
   invalid?: boolean;
   margin?: string;
   padding?: string;
-  size?: Size;
+  size?: ILabelSize;
   children?: React.ReactNode;
 }
 
-const Label = (props: ILabelProps) => {
+const Label = (props: ILabel) => {
   const {
     disabled = false,
     focused = false,
@@ -40,3 +40,4 @@ const Label = (props: ILabelProps) => {
 };
 
 export { Label };
+export type { ILabel };

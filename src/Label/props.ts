@@ -1,5 +1,5 @@
-export const sizes = ["large", "medium", "small"] as const;
-export type Size = typeof sizes[number];
+const sizes = ["large", "medium", "small"] as const;
+type ILabelSize = (typeof sizes)[number];
 
 const parameters = {
   docs: {
@@ -58,4 +58,5 @@ const props = {
   },
 };
 
-export { props, parameters };
+export { props, parameters, sizes };
+export type { ILabelSize };
