@@ -1,3 +1,23 @@
+# v2.2.1 (Thu Apr 04 2024)
+
+#### 🐛 Bug Fix
+
+- Add auto publish [#12](https://github.com/selsa-inube/inubekit-label/pull/12) ([@cmarin001](https://github.com/cmarin001))
+
+#### ⚠️ Pushed to `main`
+
+- fix: remove unnecessary code ([@cmarin001](https://github.com/cmarin001))
+
+#### 📝 Documentation
+
+- Publish new version 2.2.0 [#11](https://github.com/selsa-inube/inubekit-label/pull/11) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.2.0 (Fri Mar 22 2024)
 
 #### 🚀 Enhancement
