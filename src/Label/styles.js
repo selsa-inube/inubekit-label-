@@ -6,7 +6,7 @@ const StyledLabel = styled.label`
       theme?.typography?.label?.[$size]?.font || "Roboto"},
     sans-serif;
   font-size: ${({ $size }) => inube.typography.label[$size].size};
-  font-weight: ${({ $size }) => inube.typography.label[$size].weight};
+  font-weight: 500;
   letter-spacing: ${({ $size }) => inube.typography.label[$size].tracking};
   line-height: ${({ $size }) => inube.typography.label[$size].lineHeight};
   margin: ${({ $margin }) => $margin};
