@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
 const StyledLabel = styled.label`
-  font-family: ${({ theme }) =>
+  font-family: ${({ theme, $size }) =>
       theme?.typography?.label?.[$size]?.font || "Roboto"},
     sans-serif;
   font-size: ${({ $size }) => inube.typography.label[$size].size};
