@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
+import { tokens } from "./Tokens/tokens";
 
 const StyledLabel = styled.label`
   font-family: ${({ theme, $size }) =>
@@ -14,26 +15,22 @@ const StyledLabel = styled.label`
   color: ${({ theme, $disabled, $focused, $invalid }) => {
     if ($disabled) {
       return (
-        theme?.label?.content?.color?.disabled ||
-        inube.label.content.color.disabled
+        theme?.label?.content?.color?.disabled || tokens.content.color.disabled
       );
     }
 
     if ($invalid) {
       return (
-        theme?.label?.content?.color?.invalid ||
-        inube.label.content.color.invalid
+        theme?.label?.content?.color?.invalid || tokens.content.color.invalid
       );
     }
 
     if ($focused) {
-      return (
-        theme?.label?.content?.color?.focus || inube.label.content.color.focus
-      );
+      return theme?.label?.content?.color?.focus || tokens.content.color.focus;
     }
 
     return (
-      theme?.label?.content?.color?.regular || inube.label.content.color.regular
+      theme?.label?.content?.color?.regular || tokens.content.color.regular
     );
   }};
 `;
