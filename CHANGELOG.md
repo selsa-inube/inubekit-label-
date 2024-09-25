@@ -1,3 +1,15 @@
+# v2.18.0 (Wed Sep 25 2024)
+
+#### 🚀 Enhancement
+
+- Move label tokens from foundations to component [#28](https://github.com/selsa-inube/inubekit-label/pull/28) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.17.0 (Mon Sep 02 2024)
 
 #### 🚀 Enhancement
