@@ -11,12 +11,6 @@ const parameters = {
 };
 
 const props = {
-  disabled: {
-    description: "indicates wheter the text is in its disabled state",
-    table: {
-      defaultValue: { summary: false },
-    },
-  },
   focused: {
     description: "indicates wheter the text is in its focused state",
     table: {

@@ -1,41 +1,46 @@
 import { ILabelSize } from "./props";
-import { StyledLabel } from "./styles";
+import { ITextAppearance, Text } from "@inubekit/text";
 
 interface ILabel {
-  disabled?: boolean;
+  children?: React.ReactNode;
   focused?: boolean;
-  htmlFor: string;
+  htmlFor?: string;
   invalid?: boolean;
   margin?: string;
   padding?: string;
   size?: ILabelSize;
-  children?: React.ReactNode;
 }
 
 const Label = (props: ILabel) => {
   const {
-    disabled = false,
+    children,
     focused = false,
     htmlFor,
     invalid = false,
     margin = "0px",
     padding = "0px",
     size = "large",
-    children,
   } = props;
 
+  const getAppearance = (invalid: boolean, focused: boolean) => {
+    if (invalid) return "danger";
+    if (focused) return "primary";
+    return "dark";
+  };
+
   return (
-    <StyledLabel
-      $disabled={disabled}
-      $focused={focused}
-      htmlFor={htmlFor}
-      $invalid={invalid}
-      $margin={margin}
-      $padding={padding}
-      $size={size}
-    >
-      {children}
-    </StyledLabel>
+    <label htmlFor={htmlFor}>
+      <Text
+        appearance={getAppearance(invalid, focused) as ITextAppearance}
+        padding={padding}
+        margin={margin}
+        size={size}
+        type="label"
+        weight="bold"
+      >
+        {children}
+      </Text>
+    </label>
   );
 };
 

@@ -15,7 +15,6 @@ Default.args = {
   htmlFor: "id",
   children: "Label Text",
   size: "large",
-  disabled: false,
   focused: false,
   invalid: false,
   margin: "0px",
