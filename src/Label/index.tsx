@@ -3,6 +3,7 @@ import { ITextAppearance, Text } from "@inubekit/text";
 
 interface ILabel {
   children?: React.ReactNode;
+  disabled?: boolean;
   focused?: boolean;
   htmlFor?: string;
   invalid?: boolean;
@@ -14,6 +15,7 @@ interface ILabel {
 const Label = (props: ILabel) => {
   const {
     children,
+    disabled = false,
     focused = false,
     htmlFor,
     invalid = false,
@@ -22,18 +24,25 @@ const Label = (props: ILabel) => {
     size = "large",
   } = props;
 
-  const getAppearance = (invalid: boolean, focused: boolean) => {
+  const getAppearance = (
+    disabled: boolean,
+    focused: boolean,
+    invalid: boolean,
+  ) => {
     if (invalid) return "danger";
     if (focused) return "primary";
+    if (disabled) return "dark";
     return "dark";
   };
 
   return (
     <label htmlFor={htmlFor}>
       <Text
-        appearance={getAppearance(invalid, focused) as ITextAppearance}
-        padding={padding}
+        appearance={
+          getAppearance(disabled, focused, invalid) as ITextAppearance
+        }
         margin={margin}
+        padding={padding}
         size={size}
         type="label"
         weight="bold"

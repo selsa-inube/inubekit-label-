@@ -14,6 +14,7 @@ const Default = (args: ILabel) => {
 Default.args = {
   htmlFor: "id",
   children: "Label Text",
+  disabled: false,
   size: "large",
   focused: false,
   invalid: false,
