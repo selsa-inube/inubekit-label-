@@ -1,3 +1,15 @@
+# v3.0.2 (Tue Oct 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: adjust tokens according to new structure ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v3.0.1 (Mon Sep 30 2024)
 
 #### ⚠️ Pushed to `main`
