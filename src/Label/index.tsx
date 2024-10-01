@@ -1,5 +1,8 @@
 import { ILabelSize } from "./props";
 import { ITextAppearance, Text } from "@inubekit/text";
+import { tokens } from "./Tokens/tokens";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
 interface ILabel {
   children?: React.ReactNode;
@@ -24,23 +27,21 @@ const Label = (props: ILabel) => {
     size = "large",
   } = props;
 
-  const getAppearance = (
-    disabled: boolean,
-    focused: boolean,
-    invalid: boolean,
-  ) => {
-    if (invalid) return "danger";
-    if (focused) return "primary";
-    if (disabled) return "dark";
-    return "dark";
+  const theme = useContext(ThemeContext) as { label: typeof tokens };
+
+  const getAppearance = (): ITextAppearance => {
+    const { color } = theme?.label?.content || tokens.content;
+
+    if (invalid) return color.invalid as unknown as ITextAppearance;
+    if (focused) return color.focus as unknown as ITextAppearance;
+    if (disabled) return color.disabled as unknown as ITextAppearance;
+    return color.regular as unknown as ITextAppearance;
   };
 
   return (
     <label htmlFor={htmlFor}>
       <Text
-        appearance={
-          getAppearance(disabled, focused, invalid) as ITextAppearance
-        }
+        appearance={getAppearance()}
         margin={margin}
         padding={padding}
         size={size}
